@@ -1,0 +1,24 @@
+# Workflow no indentation requied
+# Should Have Name
+name: Hello
+# On tells when the wok flow should run - indentation requied through teb 
+on: 
+  workflow_dispatch: 
+
+#Jobs what the work flow do ther can be one or more than one jobs, hance we write jobs
+# Should be inside the workflow - jobs is object so needs indentation
+
+jobs:
+# 1st job (give indentation)
+  say-hello:
+  # Creats an Ephemeral container with Ubuntu running -thodi der chalega fir delet
+    runs-on: ubuntu-latest
+    # that ephermal container will have steps to execute , hace name those steps ans use run: run has the command
+    steps:
+      - name: Say Hello to everyoe
+        run: echo "Hello Sagar ke Dosto"
+# Steps
+# Should be inside the Job
+
+# Actions
+# Should be inside the Steps
