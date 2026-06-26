@@ -11,7 +11,7 @@ on:
 jobs:
   code:
     runs-on: ubuntu-latest
-    # this step will autometiclyy cloan the code from current code from current repo 
+    # this step will autometiclyy cloan the code from current code from current repo current branch
     steps:
       - name: Checkout/clone the code
         uses: actions/checkout@v7
